@@ -1,38 +1,107 @@
-.App {
-  text-align: center;
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('/public/marble.png'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    position: relative; 
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.about-me {
+    padding: 50px;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: transparent;
+    backdrop-filter: blur(50px);
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    margin-bottom: 50px;
+    width: 80%; 
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+h1, h2 {
+    margin: 0;
 }
 
-.App-link {
-  color: #61dafb;
+.text {
+    max-width: 100%;
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500; 
+}
+.profile-picture {
+    max-width: 150px;
+    max-height: 150px;
+    overflow: hidden;
+    margin-left: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.pfp-button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
 }
+
+.pfp-button img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.profile-picture img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 50px; 
+}
+
+.project-list {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.project {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: transparent;
+    backdrop-filter: blur(50px);
+    padding: 15px;
+    border-radius: 40px; 
+    width: 200px; 
+    height: 200px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.project img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 40px; 
+    cursor: pointer;
+}
+
+.project:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); 
+}
+
+
